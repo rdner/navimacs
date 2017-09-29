@@ -1,11 +1,11 @@
 {
 		"manifest_version": 2,
 		"name": "Navimacs",
-		"version": "1.0",
+		"version": "1.1",
 		"description": "WebExtension for Emacs web-page navigation",
 		"icons": {
-				"48": "icons/emacs.svg",
-				"96": "icons/emacs.svg"
+				"48": "icons/emacs.png",
+				"96": "icons/emacs.png"
 		},
 		"author": "Denis Rechkunov",
 		"homepage_url": "https://github.com/pragmader/navimacs",
