@@ -18,6 +18,6 @@ M-< - scroll to top
 M-> - scroll to bottom
 ```
 
-Scrolling step is dynamic and depends on the height/width of the current window. It's supposed to scroll the size of the visible document aread in 5 steps.
+Scrolling step is dynamic and depends on the height/width of the current window. It's supposed to scroll the size of the visible document area in 5 steps.
 
 The software is licensed under [GPL 2.0](https://www.gnu.org/licenses/gpl-2.0.html) license.
