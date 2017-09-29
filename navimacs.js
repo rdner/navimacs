@@ -1,49 +1,59 @@
-document.addEventListener('keydown', onKeyDown);
+'use strict';
 
 const stepsPerPage = 5;
-var scrollYStep, scrollXStep;
 
-function setSteps() {
-		scrollYStep = window.innerHeight / stepsPerPage;
-		scrollXStep = window.innerWidth / stepsPerPage;
-}
+document.addEventListener('keydown', onKeyDown);
 
 function onKeyDown(event) {
-		setSteps();
+		const scrollYStep = window.innerHeight / stepsPerPage;
+		const scrollXStep = window.innerWidth / stepsPerPage;
 		var newX = window.scrollX;
 		var newY = window.scrollY;
 
 		if (event.ctrlKey) {
-				// C-n, move down
-				if (event.keyCode === 78) {
+				switch(event.keyCode) {
+				case 78:
+						// C-n, scroll step down
 						newY += scrollYStep;
-				}
-
-				// C-p, move up
-				if (event.keyCode === 80) {
+						break;
+				case 80:
+						// C-p, scroll step up
 						newY -= scrollYStep;
-				}
-
-				// C-f, move right
-				if (event.keyCode === 70) {
+						break;
+				case 70:
+						// C-f, scroll step right
 						newX += scrollXStep;
-				}
-
-				// C-b, move left
-				if (event.keyCode === 66) {
+						break;
+				case 66:
+						// C-b, scroll step left
 						newX -= scrollXStep;
+						break;
+				case 86:
+						// C-v, scroll page down
+						newY += window.innerHeight;
+						break;
 				}
 		}
 
-		if (event.altKey || event.metaKey && event.shiftKey) {
-				// M-<, move top
-				if (event.keyCode === 188) {
-						newY = 0;
-				}
-
-				// M->, move bottom
-				if (event.keyCode === 190) {
-						newY = window.scrollMaxY;
+		if (event.altKey || event.metaKey) {
+				if (event.shiftKey) {
+						switch(event.keyCode) {
+						case 188:
+								// M-<, scroll top
+								newY = 0;
+								break;
+						case 190:
+								// M->, scroll bottom
+								newY = window.scrollMaxY;
+								break;
+						}
+				} else {
+						switch(event.keyCode) {
+						case 86:
+								// C-v, scroll page up
+								newY -= window.innerHeight;
+								break;
+						}
 				}
 		}
 
