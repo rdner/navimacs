@@ -1,7 +1,7 @@
 {
 		"manifest_version": 2,
 		"name": "Navimacs",
-		"version": "1.1",
+		"version": "1.2",
 		"description": "WebExtension for Emacs web-page navigation",
 		"icons": {
 				"48": "icons/emacs.png",
