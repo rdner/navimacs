@@ -8,7 +8,7 @@ const keyStrokes = {
 		'C-86': scroll((x, y) => { return {x, y: y + window.innerHeight}; }), // C-v -- scroll page down
 		'M-86': scroll((x, y) => { return {x, y: y - window.innerHeight}; }), // M-v -- scroll page up
 		'M-S-188': scroll((x, y) => { return {x, y: 0}; }), // M-< -- scroll top
-		'M-S-190': scroll((x, y) => { return {x, y: window.scrollMaxY}; }), // M-> -- scroll bottom
+		'M-S-190': scroll((x, y) => { return {x, y: document.body.scrollHeight}; }), // M-> -- scroll bottom
 		'C-88, 75': sendActionMessage('closeTab'), // C-x, k -- close the current tab
 		'C-88, 70': sendActionMessage('openNewTab'), // C-x, f -- open a new tab
 };
