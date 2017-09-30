@@ -16,6 +16,10 @@ C-f - scroll step right
 C-b - scroll step left
 M-< - scroll to top
 M-> - scroll to bottom
+C-v - page down
+M-v - page up
+C-x, f - open a new tab
+C-x, k - close the current tab
 ```
 
 Scrolling step is dynamic and depends on the height/width of the current window. It's supposed to scroll the size of the visible document area in 5 steps.
