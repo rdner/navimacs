@@ -9,6 +9,13 @@
 		},
 		"author": "Denis Rechkunov",
 		"homepage_url": "https://github.com/pragmader/navimacs",
+		"permissions": [
+				"tabs",
+				"activeTab"
+		],
+		"background": {
+				"scripts": ["background.js"]
+		},
 		"content_scripts": [
 				{
 						"js": [
@@ -17,8 +24,8 @@
 						"matches": [
 								"<all_urls>"
 						],
-						"match_about_blank": true,
-						"all_frames": true
+						"all_frames": true,
+						"match_about_blank": true
 				}
 		]
 }
