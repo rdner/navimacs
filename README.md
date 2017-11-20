@@ -2,11 +2,6 @@
 
 The simpliest WebExtension that introduces Emacs-like navigation keystrokes for all web-pages. Tested with Chrome 61 and Firefox 57.
 
-Published in both stores:
-
-* [Chrome Web Store](https://chrome.google.com/webstore/detail/navimacs/cmelogdihgljddfhenofpeodinceofbh)
-* [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/navimacs/)
-
 The keystrokes supported so far:
 
 ```
