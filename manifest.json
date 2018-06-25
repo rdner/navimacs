@@ -1,31 +1,31 @@
 {
-		"manifest_version": 2,
-		"name": "Navimacs",
-		"version": "1.2",
-		"description": "WebExtension for Emacs web-page navigation",
-		"icons": {
-				"48": "icons/emacs.png",
-				"96": "icons/emacs.png"
-		},
-		"author": "Denis Rechkunov",
-		"homepage_url": "https://github.com/pragmader/navimacs",
-		"permissions": [
-				"tabs",
-				"activeTab"
-		],
-		"background": {
-				"scripts": ["background.js"]
-		},
-		"content_scripts": [
-				{
-						"js": [
-								"navimacs.js"
-						],
-						"matches": [
-								"<all_urls>"
-						],
-						"all_frames": true,
-						"match_about_blank": true
-				}
-		]
+	"manifest_version": 2,
+	"name": "Navimacs",
+	"version": "1.2",
+	"description": "WebExtension for Emacs web-page navigation",
+	"icons": {
+		"48": "icons/emacs.png",
+		"96": "icons/emacs.png"
+	},
+	"author": "Denis Rechkunov",
+	"homepage_url": "https://github.com/pragmader/navimacs",
+	"permissions": [
+		"tabs",
+		"activeTab"
+	],
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"content_scripts": [
+		{
+			"js": [
+				"navimacs.js"
+			],
+			"matches": [
+				"<all_urls>"
+			],
+			"all_frames": true,
+			"match_about_blank": true
+		}
+	]
 }
