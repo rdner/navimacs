@@ -8,7 +8,7 @@
 		"96": "icons/emacs.png"
 	},
 	"author": "Denis Rechkunov",
-	"homepage_url": "https://github.com/pragmader/navimacs",
+	"homepage_url": "https://github.com/rdner/navimacs",
 	"permissions": [
 		"tabs",
 		"activeTab"
